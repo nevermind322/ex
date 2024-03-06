@@ -1,4 +1,6 @@
-import Directions.*
+package exercises
+
+import exercises.Directions.*
 
 enum class Directions {
     UP,
@@ -10,7 +12,7 @@ enum class Directions {
 
 data class Point1(val x: Double, val y: Double)
 
-fun Point1.move(direction : Directions): Point1{
+fun Point1.move(direction : Directions): Point1 {
     return when (direction){
         UP -> Point1(x, y + 1)
         DOWN -> Point1(x, y - 1)
@@ -19,7 +21,7 @@ fun Point1.move(direction : Directions): Point1{
     }
 }
 
-fun Point1.go(route : Array<Directions>) : Point1{
+fun Point1.go(route : Array<Directions>) : Point1 {
     var location = this
     for (i in route) {
         println(location)

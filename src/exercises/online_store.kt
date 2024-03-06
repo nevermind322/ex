@@ -1,7 +1,9 @@
+package exercises
+
 class Client(val name : String, var money : Double = 0.0){
     var order : String? = null
     fun makeRequest(nameOfProduct : String){
-        if (this !in Dealer.BlackArray ) {
+        if (this !in Dealer.BlackArray) {
             if (Dealer.IsInStock(nameOfProduct)) {
                 order = nameOfProduct
                 Dealer.makeDeal(this)

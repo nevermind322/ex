@@ -1,4 +1,4 @@
-
+package exercises
 
 fun main(){
 myClosure("Java")

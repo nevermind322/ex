@@ -1,3 +1,5 @@
+package exercises
+
 class Abiturient(val name : String){
     var result = 0
 }
@@ -22,7 +24,7 @@ class Institute{
 }
 
 object Teacher{
-    fun checkStudent(abit :Abiturient ){
+    fun checkStudent(abit : Abiturient){
         abit.result = (0..100).random()
     }
 }

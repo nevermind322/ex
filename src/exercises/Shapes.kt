@@ -1,14 +1,16 @@
+package exercises
+
 interface Shape {
     fun perimeter() : Number
     fun area() : Number
 }
 
-data class Rectangle(val height : Double, val width : Double) : Shape{
+data class Rectangle(val height : Double, val width : Double) : Shape {
     override fun perimeter() : Double = (height + width) * 2
     override fun area() : Double = height * width
 }
 
-data class Square(val side: Double) : Shape{
+data class Square(val side: Double) : Shape {
     override fun perimeter() : Double = side * 4
     override fun area() : Double = side * side
 }
